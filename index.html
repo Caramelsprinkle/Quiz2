@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--Code entirely taken from https://jqueryui.com/progressbar/-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Adjusts screen size to whatever device-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#Python" ).progressbar({
+                value: 70
+            });
+            $( "#Cpp" ).progressbar({
+                value: 20
+            });
+            $( "#html" ).progressbar({
+                value: 10
+            });
+        } );
+  </script>
+  <!--finds same id after # and applies progressbar element-->
+  <!--unanimated progress bar element from jquery with value of 70-->
+</head>
+<body>
+    <p>Python: 70%</p>
+    <div id="Python"></div>
+    <p>C++: 40%</p>
+    <div id="Cpp"></div>
+    <p>HTML: 10%</p>
+    <div id="html"></div>
+ 
+ 
+</body>
+</html>
